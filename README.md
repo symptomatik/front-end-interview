@@ -46,3 +46,7 @@ Channel example response: https://github.com/brandsoulmates/front-end-interview/
 3. The page should indicate that it is making a call to the endpoint with text or a loading animation/image.
 
 4. We have primarily focused on Youtube, so you may want to too ;)
+
+## Extra Credit
+
+Use the timeline endpoint (https://avspv9f312.execute-api.us-west-2.amazonaws.com/v0/timeline, also takes an access_token and url) to return some recent posts if you get back a channel, and display them under the channel info.
