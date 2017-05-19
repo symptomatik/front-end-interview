@@ -8,6 +8,12 @@ Designs for if a channel is returned:
   - https://github.com/brandsoulmates/front-end-interview/blob/master/channel_youtube.png
   - https://github.com/brandsoulmates/front-end-interview/blob/master/channel_twitter.png
   - https://github.com/brandsoulmates/front-end-interview/blob/master/channel_facebook.png
+  
+Platform colors:
+  - facebook: rgb(61, 90, 152);
+  - twitter: rgb(38, 169, 224);
+  - instagram: rgb(58, 58, 58);
+  - youtube: rgb(212, 39, 40);
 
 ### Base URL:
 https://avspv9f312.execute-api.us-west-2.amazonaws.com/v0/search
