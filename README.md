@@ -1,28 +1,35 @@
 ## Brief
-Build a web page with a search box that queries our search endpoint.
+Build a web page with a search box that queries our social media search endpoint. A user will come to the page and enter the URL of either a social media post or a channel, and the page should display information about it depending on what is returned. The goal is to get it as close to the design as possible. You can use any framework(s) of your choice.
+
+Design for if a post is returned: https://github.com/brandsoulmates/front-end-interview/blob/master/post-example.png
+
+Design for if a channel is returned: 
 
 ### Base URL:
-https://avspv9f312.execute-api.us-west-2.amazonaws.com/v0/
+https://avspv9f312.execute-api.us-west-2.amazonaws.com/v0/search
 
-All parameters are the same, listed below.
+This URL will return channel data if it is given a channel url, or post + channel data if a post is passed. Currently, our search endpoint can handle Youtube, Twitter, Instagram, and Facebook.
 
-/channel - Get channel data when passed a channel url.
+Channel examples: https://www.youtube.com/user/ConnorFranta, https://www.instagram.com/badrap_advocacy/?hl=en, https://www.facebook.com/IFeakingLoveScience/?fref=mentions
 
-/post - Get post data when passed a post url.
-
-/timeline - Get the most recent set of posts from a channel when passed a channel url.
-
+Post example:  https://www.youtube.com/watch?v=yzBIarGJjHk, https://twitter.com/MichelleObama/status/860512548331954176, https://www.instagram.com/p/BURxT6PjY-z/?taken-by=dogsofinstagram&hl=en
 
 ### Parameters:
-**access_token:** REQUIRED. string, currently required because the endpoint is public. Needs someone else's auth.
 
-**url:** OPTIONAL. Full (including prefix) url of the channel or post you want data on. If this is not given, id & network must be passed.
+**access_token:** REQUIRED. string (we will give this to you)
 
-**id:** OPTIONAL. The post or channel id you want to query. Must be accompanied by the network parameter. Not currently supported for all endpoints, so please use url for right now.
-
-**network:** OPTIONAL. The network the passed id is related to. If url is passed, this is not used.
+**url:** REQUIRED. Full (including prefix) url of the channel or post you want data on. If this is not given, id & network must be passed.
 
 
 ## Considerations
-1. Error handling: What happens if the URL is invalid or returns no results or the endpoint is down?
-2. Different APIs return different data for posts and channels. For example, Youtube is the only platform that returns dislike counts for their posts. Youtube and Instagram return no share counts, while Facebook and Twitter do. How do you handle that?
+
+1. Error handling: What happens if...
+   - the URL is invalid?
+   - no results are returned?
+   - the endpoint is down?
+   
+2. Different APIs return different data for posts and channels. For example, Youtube is the only platform that returns dislike counts for their posts. Youtube and Instagram return no share counts, while Facebook and Twitter do. How do you handle that? You can refer to this chart of what each social media platform returns: https://github.com/brandsoulmates/front-end-interview/blob/master/post-response.png
+
+3. The page should indicate that it is making a call to the endpoint with text or a loading animation/image.
+
+4. We have primarily focused on Youtube, so you may want to too ;)
