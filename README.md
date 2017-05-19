@@ -1,5 +1,5 @@
 ## Brief
-Build a web page with a search box that queries our social media search endpoint. A user will come to the page and enter the URL of either a social media post or a channel, and the page should display information about it depending on what is returned. The goal is to get it as close to the design as possible. You can use any framework(s) of your choice.
+Build a web page with a search box that queries our social media search endpoint. A user will come to the page and enter the URL of either a social media post or a channel page, and the page should display information about it depending on what is returned. The goal is to get it as close to the design as possible. You can use any framework(s) of your choice.
 
 Design for if a post is returned: https://github.com/brandsoulmates/front-end-interview/blob/master/post-search-example.png
 
@@ -10,9 +10,15 @@ https://avspv9f312.execute-api.us-west-2.amazonaws.com/v0/search
 
 This URL will return channel data if it is given a channel URL, or post + channel data if a post is passed. Currently, our search endpoint can handle Youtube, Twitter, Instagram, and Facebook.
 
-Channel examples: https://www.youtube.com/user/ConnorFranta, https://www.instagram.com/badrap_advocacy/?hl=en, https://www.facebook.com/IFeakingLoveScience/?fref=mentions
+Channel examples:
+  - https://www.youtube.com/user/ConnorFranta
+  - https://www.instagram.com/badrap_advocacy/?hl=en
+  - https://www.facebook.com/IFeakingLoveScience/?fref=mentions
 
-Post examples:  https://www.youtube.com/watch?v=yzBIarGJjHk, https://twitter.com/MichelleObama/status/860512548331954176, https://www.instagram.com/p/BURxT6PjY-z/?taken-by=dogsofinstagram&hl=en
+Post examples:
+  - https://www.youtube.com/watch?v=yzBIarGJjHk
+  - https://twitter.com/MichelleObama/status/860512548331954176
+  - https://www.instagram.com/p/BURxT6PjY-z/?taken-by=dogsofinstagram&hl=en
 
 ### Parameters:
 
@@ -20,6 +26,13 @@ Post examples:  https://www.youtube.com/watch?v=yzBIarGJjHk, https://twitter.com
 
 **url:** REQUIRED. Full (including prefix) url of the channel or post you want data on. If this is not given, id & network must be passed.
 
+### Response format:
+
+Some keys will be present on all requests, some will vary by the platform!
+
+Post example response: https://github.com/brandsoulmates/front-end-interview/blob/master/post_example_response.json
+
+Channel example response: https://github.com/brandsoulmates/front-end-interview/blob/master/channel_example_response.json
 
 ## Considerations
 
