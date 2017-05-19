@@ -1,9 +1,13 @@
 ## Brief
 Build a web page with a search box that queries our social media search endpoint. A user will come to the page and enter the URL of either a social media post or a channel page, and the page should display information about it depending on what is returned. The goal is to get it as close to the design as possible. You can use any framework(s) of your choice.
 
-Design for if a post is returned: https://github.com/brandsoulmates/front-end-interview/blob/master/post-search-example.png
+Design for if a post is returned: 
+  - https://github.com/brandsoulmates/front-end-interview/blob/master/post_youtube.png
 
-Design for if a channel is returned: 
+Designs for if a channel is returned: 
+  - https://github.com/brandsoulmates/front-end-interview/blob/master/channel_youtube.png
+  - https://github.com/brandsoulmates/front-end-interview/blob/master/channel_twitter.png
+  - https://github.com/brandsoulmates/front-end-interview/blob/master/channel_facebook.png
 
 ### Base URL:
 https://avspv9f312.execute-api.us-west-2.amazonaws.com/v0/search
