@@ -1,0 +1,19 @@
+{
+  "channel": [
+    {
+      "_type": "youtube",
+      "_id": "yUCryGec9PdUCLjpJW2mgCuLw",
+      "_index": "channels",
+      "_source": {
+        "username": "nasajpl",
+        "view_count": "90571213",
+        "video_count": "712",
+        "description": "Videos produced by NASA's Jet Propulsion Laboratory",
+        "profile_image_url": "https://yt3.ggpht.com/-hJLbF7ipaSA/AAAAAAAAAAI/AAAAAAAAAAA/QXJonnZjiQs/s240-c-k-no-mo-rj-c0xffffff/photo.jpg",
+        "channel_id": "UCryGec9PdUCLjpJW2mgCuLw",
+        "full_name": "NASA Jet Propulsion Laboratory",
+        "follower_count": "269900"
+      }
+    }
+  ]
+}
