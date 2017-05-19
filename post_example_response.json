@@ -1,0 +1,41 @@
+{
+  "post": [
+    {
+      "_type": "youtube",
+      "_id": "yy6D3qUPEVGA",
+      "_index": "posts",
+      "_source": {
+        "username": "NASA Jet Propulsion Laboratory",
+        "updated_date": "2017-05-05 18:10:31",
+        "view_count": "30902",
+        "post_image_url": "https://i.ytimg.com/vi/y6D3qUPEVGA/sddefault.jpg",
+        "message_text": "Mars takes a longer trip around the Sun than Earth does.  Find out what that means for spacecraft in this 60-second video. Find out more about the Martian New Year here: https://mars.jpl.nasa.gov/allaboutmars/extreme/martianyear/",
+        "post_title": "Mars in a Minute: How Long is a Year on Mars?",
+        "scraped_date": "2017-05-19 23:25:45",
+        "channel_id": "UCryGec9PdUCLjpJW2mgCuLw",
+        "dislike_count": "5",
+        "post_id": "y6D3qUPEVGA",
+        "comment_count": "59",
+        "like_count": "767",
+        "created_date": "2017-05-05 18:10:31"
+      }
+    }
+  ],
+  "channel": [
+    {
+      "_type": "youtube",
+      "_id": "yUCryGec9PdUCLjpJW2mgCuLw",
+      "_index": "channels",
+      "_source": {
+        "username": "nasajpl",
+        "view_count": "90571213",
+        "video_count": "712",
+        "description": "Videos produced by NASA's Jet Propulsion Laboratory",
+        "profile_image_url": "https://yt3.ggpht.com/-hJLbF7ipaSA/AAAAAAAAAAI/AAAAAAAAAAA/QXJonnZjiQs/s240-c-k-no-mo-rj-c0xffffff/photo.jpg",
+        "channel_id": "UCryGec9PdUCLjpJW2mgCuLw",
+        "full_name": "NASA Jet Propulsion Laboratory",
+        "follower_count": "269900"
+      }
+    }
+  ]
+}
