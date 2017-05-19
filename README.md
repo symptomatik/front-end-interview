@@ -1,18 +1,18 @@
 ## Brief
 Build a web page with a search box that queries our social media search endpoint. A user will come to the page and enter the URL of either a social media post or a channel, and the page should display information about it depending on what is returned. The goal is to get it as close to the design as possible. You can use any framework(s) of your choice.
 
-Design for if a post is returned: https://github.com/brandsoulmates/front-end-interview/blob/master/post-example.png
+Design for if a post is returned: https://github.com/brandsoulmates/front-end-interview/blob/master/post-search-example.png
 
 Design for if a channel is returned: 
 
 ### Base URL:
 https://avspv9f312.execute-api.us-west-2.amazonaws.com/v0/search
 
-This URL will return channel data if it is given a channel url, or post + channel data if a post is passed. Currently, our search endpoint can handle Youtube, Twitter, Instagram, and Facebook.
+This URL will return channel data if it is given a channel URL, or post + channel data if a post is passed. Currently, our search endpoint can handle Youtube, Twitter, Instagram, and Facebook.
 
 Channel examples: https://www.youtube.com/user/ConnorFranta, https://www.instagram.com/badrap_advocacy/?hl=en, https://www.facebook.com/IFeakingLoveScience/?fref=mentions
 
-Post example:  https://www.youtube.com/watch?v=yzBIarGJjHk, https://twitter.com/MichelleObama/status/860512548331954176, https://www.instagram.com/p/BURxT6PjY-z/?taken-by=dogsofinstagram&hl=en
+Post examples:  https://www.youtube.com/watch?v=yzBIarGJjHk, https://twitter.com/MichelleObama/status/860512548331954176, https://www.instagram.com/p/BURxT6PjY-z/?taken-by=dogsofinstagram&hl=en
 
 ### Parameters:
 
@@ -28,7 +28,7 @@ Post example:  https://www.youtube.com/watch?v=yzBIarGJjHk, https://twitter.com/
    - no results are returned?
    - the endpoint is down?
    
-2. Different APIs return different data for posts and channels. For example, Youtube is the only platform that returns dislike counts for their posts. Youtube and Instagram return no share counts, while Facebook and Twitter do. How do you handle that? You can refer to this chart of what each social media platform returns: https://github.com/brandsoulmates/front-end-interview/blob/master/post-response.png
+2. Each social media platform API queried by our endpoint returns different data for posts. For example, Youtube is the only platform that returns dislike counts for their posts. Youtube and Instagram return no share counts, while Facebook and Twitter do. How do you handle that? You can refer to this chart of what each platform returns: https://github.com/brandsoulmates/front-end-interview/blob/master/post-response.png
 
 3. The page should indicate that it is making a call to the endpoint with text or a loading animation/image.
 
