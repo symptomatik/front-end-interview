@@ -1,0 +1,8 @@
+<div class="search-container">
+    <label class="search-label">Live URL</label>
+    <input type="text" id="search-url" [(ngModel)]="searchUrl" placeholder="Enter a valid URL here:" class="search-input">
+    <button (click)="submitSearch()" class="submit-search">SEARCH</button>
+</div>
+<div *ngIf="searchResult">
+    <results [result]="searchResult"></results>
+</div>

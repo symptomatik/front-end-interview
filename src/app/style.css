@@ -1,0 +1,25 @@
+.app-container {
+    padding: 24px;
+}
+.search-container {
+    width: 100%;
+    border: 1px lightgray;
+}
+.search-label {
+    width: 100%;
+    float: left;
+    color: #0096B5;
+    font-size: 14px;
+}
+.search-input {
+    width: 80%;
+    border-bottom: 2px #0096B5;
+    margin-right: 12px;
+}
+.submit-search {
+    float: right;
+    width: 15%;
+    height: 20px;
+}
+
+
