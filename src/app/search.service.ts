@@ -8,6 +8,7 @@ export class SearchService {
     search(url: string) {
         let craftedUrl = this.createUrl(url);
         console.log(craftedUrl);
+        return {'url':craftedUrl};
     }
     
     createUrl(url: string) {

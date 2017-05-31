@@ -1,0 +1,27 @@
+<div class="youtube-container">
+    <div *ngIf="result.type === 'post'" class="youtube-post-container">
+        <div class="result-metadata-container">
+            <div class="result-avatar-container">PIC</div>
+            <div class="result-user-information">
+                <div class="result-username">Natalie Tran</div>
+                <div class="result-post-date">Published on May 27, 2017</div>
+            </div>
+            <div class="result-post-content">
+                <div class="result-post-description">
+                    Loving the new smart toaster from hooli.  It's literally changed my life.  I can't even right now.  Get yours now: 
+                </div>
+                <div class="result-post-embed">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/Rolqism8_Dk" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <ul class="result-post-statistics">
+                    <li class="result-post-views">Views</li>
+                    <li class="result-post-likes">Likes</li>
+                    <li class="result-post-comments">Comments</li>
+                    <li class="result-post-shares">Shares</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div *ngIf="result.type === 'channel'" class="youtube-channel-container">
+    </div>
+</div>

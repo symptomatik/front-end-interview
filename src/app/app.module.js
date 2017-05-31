@@ -11,6 +11,7 @@ var forms_1 = require("@angular/forms");
 var app_component_1 = require("./app.component");
 var search_component_1 = require("./search.component");
 var result_component_1 = require("./result.component");
+var youtube_component_1 = require("./youtube.component");
 var search_service_1 = require("./search.service");
 var AppModule = (function () {
     function AppModule() {
@@ -20,7 +21,7 @@ var AppModule = (function () {
 AppModule = __decorate([
     core_1.NgModule({
         imports: [platform_browser_1.BrowserModule, forms_1.FormsModule],
-        declarations: [app_component_1.AppComponent, search_component_1.SearchComponent, result_component_1.ResultComponent],
+        declarations: [app_component_1.AppComponent, search_component_1.SearchComponent, result_component_1.ResultComponent, youtube_component_1.YoutubeComponent],
         providers: [search_service_1.SearchService],
         bootstrap: [app_component_1.AppComponent]
     })

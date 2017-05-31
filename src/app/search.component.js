@@ -13,10 +13,9 @@ var search_service_1 = require("./search.service");
 var SearchComponent = (function () {
     function SearchComponent(searchService) {
         this.searchService = searchService;
-        this.searchResult = { name: 'jim' };
     }
     SearchComponent.prototype.submitSearch = function () {
-        this.searchService.search(this.searchUrl);
+        this.searchResult = this.searchService.search(this.searchUrl);
     };
     return SearchComponent;
 }());

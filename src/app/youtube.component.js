@@ -9,25 +9,20 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require("@angular/core");
-var ResultComponent = (function () {
-    function ResultComponent() {
+var YoutubeComponent = (function () {
+    function YoutubeComponent() {
     }
-    ResultComponent.prototype.ngOnInit = function () {
-        this.result.medium = 'youtube';
-        this.result.type = 'post';
-        console.log(this.result);
-    };
-    return ResultComponent;
+    return YoutubeComponent;
 }());
 __decorate([
     core_1.Input(),
     __metadata("design:type", Object)
-], ResultComponent.prototype, "result", void 0);
-ResultComponent = __decorate([
+], YoutubeComponent.prototype, "result", void 0);
+YoutubeComponent = __decorate([
     core_1.Component({
-        selector: 'result',
-        templateUrl: './templates/result.component.html'
+        selector: 'youtube',
+        templateUrl: './templates/youtube.component.html'
     })
-], ResultComponent);
-exports.ResultComponent = ResultComponent;
-//# sourceMappingURL=result.component.js.map
+], YoutubeComponent);
+exports.YoutubeComponent = YoutubeComponent;
+//# sourceMappingURL=youtube.component.js.map

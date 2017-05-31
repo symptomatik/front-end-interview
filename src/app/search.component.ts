@@ -10,9 +10,9 @@ import { SearchService } from './search.service';
 export class SearchComponent {
     constructor(private searchService: SearchService){}
     searchUrl: '';
-    searchResult = {name:'jim'};
+    searchResult: {};
 
     submitSearch() {
-        this.searchService.search(this.searchUrl);
+        this.searchResult = this.searchService.search(this.searchUrl);
     }
 }
