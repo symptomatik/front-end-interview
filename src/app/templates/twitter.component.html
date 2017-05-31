@@ -1,1 +1,54 @@
-<div class="twitter-container">Twitter</div>
+<div class="twitter-container">
+    <div *ngIf="result.type === 'post'" class="twitter-post-container">
+        <div class="result-metadata-container">
+            <div class="result-avatar-container">
+                <img class="result-avatar-image" src="{{channel.profile_image_url}}"/>
+            </div>
+            <div class="result-user-information">
+                <div class="result-username">{{channel.full_name}}</div>
+                <div class="result-post-date">
+                    <i class="fa fa-youtube-play" aria-hidden="true"></i>
+                    Published on {{post.created_date | date}}
+                </div>
+            </div>
+        </div>
+        <div class="result-post-content">
+            <div class="result-post-description">
+                {{post.message_text}}
+            </div>
+            <div class="result-post-embed">
+                <iframe [src]="embedUrl" width="100%" height="100%" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <ul class="result-post-statistics">
+                <li class="result-post-statistic result-post-views"><i class="fa fa-eye" aria-hidden="true"></i>{{post.view_count}}</li>
+                <li class="result-post-statistic result-post-likes"><i class="fa fa-thumbs-up" aria-hidden="true"></i>{{post.like_count}}</li>
+                <li class="result-post-statistic result-post-comments"><i class="fa fa-comments" aria-hidden="true"></i>{{post.comment_count}}</li>
+                <li *ngIf="post.share_count" class="result-post-statistic result-post-shares"><i class="fa fa-share" aria-hidden="true"></i>{{post.share_count}}</li>
+            </ul>
+        </div>
+    </div>
+    <div *ngIf="result.type === 'channel'" class="twitter-channel-container channel-container">
+        <div class="result-metadata-container">
+            <div class="result-avatar-container">
+                <img class="result-avatar-image" src="{{channel.profile_image_url}}"/>
+            </div>
+            <div class="result-user-information">
+                <div class="result-username">{{channel.full_name}}</div>
+                <ul class="result-channel-statistics">
+                    <li class="result-channel-statistic">
+                        <i class="fa fa-youtube-play" aria-hidden="true"></i>
+                        Followers <span class="channel-stat-value">{{channel.follower_count}}</span>
+                    </li>
+                    <li class="result-channel-statistic"># of Posts <span class="channel-stat-value">{{channel.video_count}}</span></li>
+                    <li class="result-channel-statistic">Overall View Count <span class="channel-stat-value">{{channel.view_count}}</span></li>
+                </ul>
+            </div>
+        </div>
+        <div class="result-channel-content">
+            <div class="description-container">
+                <h1>Description:</h1>
+                {{channel.description}}
+            </div>
+        </div>
+    </div>
+</div>
