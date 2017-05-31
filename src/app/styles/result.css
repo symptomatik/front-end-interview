@@ -3,6 +3,9 @@
     padding: 12px;
     border: solid 1px #E5E5E5;
 }
+a {
+    text-decoration: none;
+}
 .result-metadata-container {
     display: block;
     width: 100%;
@@ -25,6 +28,10 @@
 }
 .result-username {
     padding-bottom: 6px;
+}
+.result-username a {
+    color: inherit;
+    font-size: inherit;
 }
 .result-post-date {
     font-size: 12px;        
@@ -81,11 +88,16 @@
     font-size: 14px;
     line-height: 18px;    
 }
-.description-container h1 {
+.description-container-item {
+    margin-bottom: 12px;
+}
+.description-container-item span, .description-container h1 {
     color: #5A5A5A;
     font-size: 16px;
 }
-
+.description-container-item span {
+    font-weight: 700;
+}
 /* facebook: rgb(61, 90, 152);
 twitter: rgb(38, 169, 224);
 instagram: rgb(58, 58, 58);
