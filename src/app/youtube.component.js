@@ -13,7 +13,10 @@ var YoutubeComponent = (function () {
     function YoutubeComponent() {
     }
     YoutubeComponent.prototype.ngOnInit = function () {
-        console.log('youtube init');
+        this.channel = this.result.channel[0]._source;
+        if (this.result.type === 'post') {
+            this.post = this.result.post[0]._source;
+        }
     };
     return YoutubeComponent;
 }());
