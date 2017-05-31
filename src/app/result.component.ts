@@ -6,7 +6,7 @@ import { Component, Input, OnInit } from "@angular/core";
     styleUrls: ['./styles/result.css']
 })
 export class ResultComponent implements OnInit{
-    @Input() result: {medium: string, type: string};
+    @Input() result: {medium: string, type: string, data: any};
 
     ngOnInit() {
         this.result.medium = 'youtube';

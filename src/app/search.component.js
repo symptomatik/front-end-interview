@@ -13,9 +13,12 @@ var search_service_1 = require("./search.service");
 var SearchComponent = (function () {
     function SearchComponent(searchService) {
         this.searchService = searchService;
+        this.fetchResult = {};
     }
     SearchComponent.prototype.submitSearch = function () {
-        this.searchResult = this.searchService.search(this.searchUrl);
+        var _this = this;
+        this.searchService.search(this.searchUrl)
+            .subscribe(function (data) { return _this.fetchResult = data; }, function (error) { return _this.errorMessage = error; });
     };
     return SearchComponent;
 }());

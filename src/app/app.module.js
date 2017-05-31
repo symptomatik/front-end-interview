@@ -8,6 +8,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var core_1 = require("@angular/core");
 var platform_browser_1 = require("@angular/platform-browser");
 var forms_1 = require("@angular/forms");
+var http_1 = require("@angular/http");
 var app_component_1 = require("./app.component");
 var search_component_1 = require("./search.component");
 var result_component_1 = require("./result.component");
@@ -20,7 +21,7 @@ var AppModule = (function () {
 }());
 AppModule = __decorate([
     core_1.NgModule({
-        imports: [platform_browser_1.BrowserModule, forms_1.FormsModule],
+        imports: [platform_browser_1.BrowserModule, forms_1.FormsModule, http_1.HttpModule, http_1.JsonpModule],
         declarations: [app_component_1.AppComponent, search_component_1.SearchComponent, result_component_1.ResultComponent, youtube_component_1.YoutubeComponent],
         providers: [search_service_1.SearchService],
         bootstrap: [app_component_1.AppComponent]

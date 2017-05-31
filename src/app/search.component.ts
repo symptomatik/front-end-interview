@@ -8,11 +8,17 @@ import { SearchService } from './search.service';
     styleUrls: ['./styles/search.css']
 })
 export class SearchComponent {
-    constructor(private searchService: SearchService){}
     searchUrl: '';
-    searchResult: {medium: string, type: string};
+    searchResult: {medium: string, type: string, data: any};
+    fetchResult: any = {};
+    errorMessage: any;
+    
+    constructor(private searchService: SearchService){}
 
     submitSearch() {
-        this.searchResult = this.searchService.search(this.searchUrl);
+        this.searchService.search(this.searchUrl)
+                          .subscribe(
+                            data => this.fetchResult = data,
+                            error => this.errorMessage = <any>error);
     }
 }
