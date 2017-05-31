@@ -22,9 +22,7 @@ export class SearchService {
 
     extractData(res: Response) {
         let body = res.json();
-        console.log('res: ', res);
-        console.log('body: ', body);
-        return body.data || {};
+        return body || {};
     }
 
     handleError(error: Response | any) {
@@ -33,7 +31,6 @@ export class SearchService {
     }
 
     fetchResult(url: string): Observable<any>{
-        console.log('url: ', url);
         return this.http.get(url)
                         .map(this.extractData)
                         .catch(this.handleError);

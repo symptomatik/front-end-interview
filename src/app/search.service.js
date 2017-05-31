@@ -28,16 +28,13 @@ var SearchService = (function () {
     };
     SearchService.prototype.extractData = function (res) {
         var body = res.json();
-        console.log('res: ', res);
-        console.log('body: ', body);
-        return body.data || {};
+        return body || {};
     };
     SearchService.prototype.handleError = function (error) {
         console.log(error.json());
         return Observable_1.Observable.throw('hi');
     };
     SearchService.prototype.fetchResult = function (url) {
-        console.log('url: ', url);
         return this.http.get(url)
             .map(this.extractData)
             .catch(this.handleError);

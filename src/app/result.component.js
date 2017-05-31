@@ -13,9 +13,22 @@ var ResultComponent = (function () {
     function ResultComponent() {
     }
     ResultComponent.prototype.ngOnInit = function () {
-        this.result.medium = 'youtube';
-        this.result.type = 'post';
-        console.log(this.result);
+        this.result.medium = this.determineMedium();
+        this.result.type = this.determineType();
+    };
+    ResultComponent.prototype.determineMedium = function () {
+        if (this.result.channel && this.result.channel.length > 0) {
+            return this.result.channel[0]._type || 'error';
+        }
+        return 'error';
+    };
+    ResultComponent.prototype.determineType = function () {
+        if (this.result.hasOwnProperty('post')) {
+            return 'post';
+        }
+        else {
+            return 'channel';
+        }
     };
     return ResultComponent;
 }());

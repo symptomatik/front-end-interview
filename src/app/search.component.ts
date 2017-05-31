@@ -9,16 +9,15 @@ import { SearchService } from './search.service';
 })
 export class SearchComponent {
     searchUrl: '';
-    searchResult: {medium: string, type: string, data: any};
-    fetchResult: any = {};
+    fetchResult: {};
     errorMessage: any;
-    
+
     constructor(private searchService: SearchService){}
 
     submitSearch() {
         this.searchService.search(this.searchUrl)
                           .subscribe(
-                            data => this.fetchResult = data,
+                            data => {this.fetchResult = data;},
                             error => this.errorMessage = <any>error);
     }
 }
