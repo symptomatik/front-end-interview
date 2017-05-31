@@ -11,13 +11,15 @@ export class SearchComponent {
     searchUrl: '';
     fetchResult: {};
     errorMessage: any;
+    loading: boolean = false;
 
     constructor(private searchService: SearchService){}
 
     submitSearch() {
+        this.loading = true;
         this.searchService.search(this.searchUrl)
                           .subscribe(
-                            data => {this.fetchResult = data;},
+                            data => {this.fetchResult = data;this.loading = false;},
                             error => this.errorMessage = <any>error);
     }
 }

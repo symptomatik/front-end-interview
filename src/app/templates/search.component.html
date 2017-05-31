@@ -3,6 +3,9 @@
     <input type="text" id="search-url" [(ngModel)]="searchUrl" placeholder="Enter a valid URL here:" class="search-input">
     <button (click)="submitSearch()" class="submit-search">SEARCH</button>
 </div>
+<div *ngIf="loading" class="loading-container">
+    LOADING!
+</div>
 <div *ngIf="fetchResult">
     <result [result]="fetchResult"></result>
 </div>

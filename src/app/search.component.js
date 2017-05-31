@@ -13,11 +13,13 @@ var search_service_1 = require("./search.service");
 var SearchComponent = (function () {
     function SearchComponent(searchService) {
         this.searchService = searchService;
+        this.loading = false;
     }
     SearchComponent.prototype.submitSearch = function () {
         var _this = this;
+        this.loading = true;
         this.searchService.search(this.searchUrl)
-            .subscribe(function (data) { _this.fetchResult = data; }, function (error) { return _this.errorMessage = error; });
+            .subscribe(function (data) { _this.fetchResult = data; _this.loading = false; }, function (error) { return _this.errorMessage = error; });
     };
     return SearchComponent;
 }());
