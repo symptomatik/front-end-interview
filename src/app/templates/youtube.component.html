@@ -8,7 +8,7 @@
                 <div class="result-username">{{channel.full_name}}</div>
                 <div class="result-post-date">
                     <i class="fa fa-youtube-play" aria-hidden="true"></i>
-                    Published on {{post.created_date}}
+                    Published on {{post.created_date | date}}
                 </div>
             </div>
         </div>
@@ -28,5 +28,27 @@
         </div>
     </div>
     <div *ngIf="result.type === 'channel'" class="youtube-channel-container">
+        <div class="result-metadata-container">
+            <div class="result-avatar-container">
+                <img class="result-avatar-image" src="{{channel.profile_image_url}}"/>
+            </div>
+            <div class="result-user-information">
+                <div class="result-username">{{channel.full_name}}</div>
+                <ul class="result-channel-statistics">
+                    <li class="result-channel-statistic">
+                        <i class="fa fa-youtube-play" aria-hidden="true"></i>
+                        Followers 1M
+                    </li>
+                    <li class="result-channel-statistic"># of Posts 1300</li>
+                    <li class="result-channel-statistic">Overall View Count 1.3M</li>
+                </ul>
+            </div>
+        </div>
+        <div class="result-channel-content">
+            <div class="description-conatiner">
+                <h1>Description:</h1>
+                {{channel.description}}
+            </div>
+        </div>
     </div>
 </div>

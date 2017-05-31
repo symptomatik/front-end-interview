@@ -22,6 +22,7 @@ var YoutubeComponent = (function () {
             this.post = this.result.post[0]._source;
             this.embedUrl = this.sanitizer.bypassSecurityTrustResourceUrl(this.dangerousUrl + this.post.post_id);
         }
+        console.log(this.channel);
     };
     return YoutubeComponent;
 }());
