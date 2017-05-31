@@ -10,32 +10,32 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var core_1 = require("@angular/core");
 var platform_browser_1 = require("@angular/platform-browser");
-var YoutubeComponent = (function () {
-    function YoutubeComponent(sanitizer) {
+var TwitterComponent = (function () {
+    function TwitterComponent(sanitizer) {
         this.sanitizer = sanitizer;
-        this.dangerousUrl = 'https://www.youtube.com/embed/';
+        this.dangerousUrl = 'https://www.twitter.com/';
         this.embedUrl = sanitizer.bypassSecurityTrustResourceUrl(this.dangerousUrl);
     }
-    YoutubeComponent.prototype.ngOnInit = function () {
+    TwitterComponent.prototype.ngOnInit = function () {
         this.channel = this.result.channel[0]._source;
         if (this.result.type === 'post') {
             this.post = this.result.post[0]._source;
             this.embedUrl = this.sanitizer.bypassSecurityTrustResourceUrl(this.dangerousUrl + this.post.post_id);
         }
     };
-    return YoutubeComponent;
+    return TwitterComponent;
 }());
 __decorate([
     core_1.Input(),
     __metadata("design:type", Object)
-], YoutubeComponent.prototype, "result", void 0);
-YoutubeComponent = __decorate([
+], TwitterComponent.prototype, "result", void 0);
+TwitterComponent = __decorate([
     core_1.Component({
-        selector: 'youtube',
-        templateUrl: './templates/youtube.component.html',
-        styleUrls: ['./styles/result.css', './styles/youtube.css']
+        selector: 'twitter',
+        templateUrl: './templates/twitter.component.html',
+        styleUrls: ['./styles/result.css', './styles/twitter.css']
     }),
     __metadata("design:paramtypes", [platform_browser_1.DomSanitizer])
-], YoutubeComponent);
-exports.YoutubeComponent = YoutubeComponent;
-//# sourceMappingURL=youtube.component.js.map
+], TwitterComponent);
+exports.TwitterComponent = TwitterComponent;
+//# sourceMappingURL=twitter.component.js.map

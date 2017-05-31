@@ -26,8 +26,7 @@ export class SearchService {
     }
 
     handleError(error: Response | any) {
-        console.log(error.json());
-        return Observable.throw('hi');
+        return Observable.throw('error');
     }
 
     fetchResult(url: string): Observable<any>{

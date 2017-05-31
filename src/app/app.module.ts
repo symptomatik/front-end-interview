@@ -7,11 +7,12 @@ import { AppComponent }  from './app.component';
 import { SearchComponent } from './search.component';
 import { ResultComponent } from './result.component';
 import { YoutubeComponent } from './youtube.component';
+import { TwitterComponent } from './twitter.component';
 
 import { SearchService } from './search.service';
 @NgModule({
   imports:      [ BrowserModule, FormsModule, HttpModule, JsonpModule ],
-  declarations: [ AppComponent, SearchComponent, ResultComponent, YoutubeComponent ],
+  declarations: [ AppComponent, SearchComponent, ResultComponent, YoutubeComponent, TwitterComponent ],
   providers:    [ SearchService ],
   bootstrap:    [ AppComponent ]
 })

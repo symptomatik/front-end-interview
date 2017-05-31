@@ -2,15 +2,15 @@ import { Component, Input, OnInit } from '@angular/core';
 import { DomSanitizer, SafeResourceUrl, SafeUrl } from '@angular/platform-browser';
 
 @Component({
-    selector: 'youtube',
-    templateUrl: './templates/youtube.component.html',
-    styleUrls: ['./styles/result.css', './styles/youtube.css']
+    selector: 'twitter',
+    templateUrl: './templates/twitter.component.html',
+    styleUrls: ['./styles/result.css', './styles/twitter.css']
 })
-export class YoutubeComponent implements OnInit {
+export class TwitterComponent implements OnInit {
     @Input() result: {channel: [any], post: [any], type: string, medium: string};
     channel: {};
     post: {post_id: string};
-    dangerousUrl: string = 'https://www.youtube.com/embed/';
+    dangerousUrl: string = 'https://www.twitter.com/';
     embedUrl: SafeResourceUrl;
 
     constructor(private sanitizer: DomSanitizer) {

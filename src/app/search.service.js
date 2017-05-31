@@ -31,8 +31,7 @@ var SearchService = (function () {
         return body || {};
     };
     SearchService.prototype.handleError = function (error) {
-        console.log(error.json());
-        return Observable_1.Observable.throw('hi');
+        return Observable_1.Observable.throw('error');
     };
     SearchService.prototype.fetchResult = function (url) {
         return this.http.get(url)
