@@ -5,7 +5,7 @@ import { SearchService } from './search.service';
 @Component({
     selector: 'search',
     templateUrl: './templates/search.component.html',
-    styleUrls: ['./style.css']
+    styleUrls: ['./styles/search.css']
 })
 export class SearchComponent {
     constructor(private searchService: SearchService){}

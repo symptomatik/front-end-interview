@@ -1,24 +1,8 @@
-* {
-    font-family: Helvetica, Arial, sans-serif;
-}
-/* Button Reset Styles */
-button {
-  display: inline-block;
-  padding: 12px;
-  font-size: 12px;
-  box-shadow: none;
-  border-radius: 0;
-}
-button:focus {
-  outline: none
-}
-.app-container {
-    padding: 24px;
-    min-width: 800px;
-}
+/* SearchComponent BEGIN */
 .search-container {
     width: 100%;
     min-width: 660px;
+    margin-bottom: 24px;
 }
 .search-label {
     width: 100%;
@@ -50,13 +34,6 @@ button:focus {
     letter-spacing: 1px;
     border: none;
     padding: 10px 16px;
-    margin-left: 24px;
+    float: right;
     cursor: pointer;
 }
-
-
-/* facebook: rgb(61, 90, 152);
-twitter: rgb(38, 169, 224);
-instagram: rgb(58, 58, 58);
-youtube: rgb(212, 39, 40);
-*/

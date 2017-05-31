@@ -26,7 +26,8 @@ __decorate([
 ResultComponent = __decorate([
     core_1.Component({
         selector: 'result',
-        templateUrl: './templates/result.component.html'
+        templateUrl: './templates/result.component.html',
+        styleUrls: ['./styles/result.css']
     })
 ], ResultComponent);
 exports.ResultComponent = ResultComponent;

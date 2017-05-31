@@ -23,7 +23,7 @@ SearchComponent = __decorate([
     core_1.Component({
         selector: 'search',
         templateUrl: './templates/search.component.html',
-        styleUrls: ['./style.css']
+        styleUrls: ['./styles/search.css']
     }),
     __metadata("design:paramtypes", [search_service_1.SearchService])
 ], SearchComponent);
