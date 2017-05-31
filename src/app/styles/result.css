@@ -3,9 +3,62 @@
     padding: 12px;
     border: solid 1px #E5E5E5;
 }
-/* YoutubeComponent BEGIN */
-
-
+.result-metadata-container {
+    display: block;
+    width: 100%;
+}
+.result-avatar-container {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+}
+.result-avatar-image {
+    width: 100%;
+    height: 100%;
+}
+.result-user-information {
+    width: calc(100% - 62px);
+    float: right;
+    color: #656565;
+    font-size: 14px;
+    padding-top: 8px;
+}
+.result-username {
+    padding-bottom: 6px;
+}
+.result-post-date {
+    font-size: 12px;        
+}
+.result-post-content {
+    width: 100%;
+}
+.result-post-description {
+    margin-top: 12px;
+    font-size: 14px;
+    line-height: 18px;
+}
+/* May currently be youtube specific but allows for flexibility with tweets and fb video later on */
+.result-post-embed {
+    margin: 24px auto 0;
+    text-align: center;
+    width: 100%;
+    height: 600px;
+}
+.result-post-statistics {
+    padding: 0 0 0 2px;
+    font-size: 14px;
+    color: #7C7C7C;
+    list-style-type: none;
+    width: 100%;
+}
+.result-post-statistic {
+    display: inline;
+    margin-right: 20px;
+}
+.result-post-statistic i.fa {
+    margin-right: 4px;
+    font-size: 18px;    
+}
 /* facebook: rgb(61, 90, 152);
 twitter: rgb(38, 169, 224);
 instagram: rgb(58, 58, 58);

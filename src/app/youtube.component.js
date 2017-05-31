@@ -21,7 +21,8 @@ __decorate([
 YoutubeComponent = __decorate([
     core_1.Component({
         selector: 'youtube',
-        templateUrl: './templates/youtube.component.html'
+        templateUrl: './templates/youtube.component.html',
+        styleUrls: ['./styles/result.css', './styles/youtube.css']
     })
 ], YoutubeComponent);
 exports.YoutubeComponent = YoutubeComponent;

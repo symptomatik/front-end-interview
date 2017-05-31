@@ -1,7 +1,6 @@
 /* SearchComponent BEGIN */
 .search-container {
     width: 100%;
-    min-width: 660px;
     margin-bottom: 24px;
 }
 .search-label {
