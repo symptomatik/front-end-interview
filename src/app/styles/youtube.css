@@ -1,3 +1,9 @@
-.result-post-date .fa-youtube-play {
+.result-post-date .fa-youtube-play, .result-channel-statistics .fa-youtube-play {
     color: rgb(212, 39, 40);
+}
+.result-channel-statistics .fa-youtube-play {
+    margin-right: 8px;
+}
+.youtube-channel-container .result-channel-statistics {
+    border-bottom: solid 2px rgb(212, 39, 40);
 }

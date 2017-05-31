@@ -20,7 +20,7 @@
     width: calc(100% - 62px);
     float: right;
     color: #656565;
-    font-size: 14px;
+    font-size: 16px;
     padding-top: 8px;
 }
 .result-username {
@@ -51,7 +51,7 @@
     list-style-type: none;
     width: 100%;
 }
-.result-post-statistic {
+.result-post-statistic, .result-channel-statistic {
     display: inline;
     margin-right: 20px;
 }
@@ -59,6 +59,33 @@
     margin-right: 4px;
     font-size: 18px;    
 }
+
+/* Channel Specific Styles BEGIN */
+.result-channel-statistics {
+    font-size: 14px;
+    color: #828282;
+    list-style-type: none;
+    margin: 0;
+    padding: 0 0 4px 0;
+    border-bottom: solid 2px #0096B5;
+}
+.channel-stat-value {
+    font-weight: 600;
+    color: #000000;
+}
+.channel-container .result-user-information {
+    padding-top: 5px;
+}
+.description-container {
+    margin-top: 24px;
+    font-size: 14px;
+    line-height: 18px;    
+}
+.description-container h1 {
+    color: #5A5A5A;
+    font-size: 16px;
+}
+
 /* facebook: rgb(61, 90, 152);
 twitter: rgb(38, 169, 224);
 instagram: rgb(58, 58, 58);
