@@ -8,7 +8,7 @@ export class SearchService {
     search(url: string) {
         let craftedUrl = this.createUrl(url);
         console.log(craftedUrl);
-        return {'url':craftedUrl};
+        return {medium: 'youtube', type: 'post'};
     }
     
     createUrl(url: string) {

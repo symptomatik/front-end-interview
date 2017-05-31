@@ -7,4 +7,8 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class YoutubeComponent implements OnInit {
     @Input() result: {};
+
+    ngOnInit() {
+        console.log('youtube init');
+    }
 }

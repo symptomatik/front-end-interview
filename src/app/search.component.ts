@@ -10,7 +10,7 @@ import { SearchService } from './search.service';
 export class SearchComponent {
     constructor(private searchService: SearchService){}
     searchUrl: '';
-    searchResult: {};
+    searchResult: {medium: string, type: string};
 
     submitSearch() {
         this.searchResult = this.searchService.search(this.searchUrl);

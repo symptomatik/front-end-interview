@@ -12,6 +12,9 @@ var core_1 = require("@angular/core");
 var YoutubeComponent = (function () {
     function YoutubeComponent() {
     }
+    YoutubeComponent.prototype.ngOnInit = function () {
+        console.log('youtube init');
+    };
     return YoutubeComponent;
 }());
 __decorate([

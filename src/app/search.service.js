@@ -14,7 +14,7 @@ var SearchService = (function () {
     SearchService.prototype.search = function (url) {
         var craftedUrl = this.createUrl(url);
         console.log(craftedUrl);
-        return { 'url': craftedUrl };
+        return { medium: 'youtube', type: 'post' };
     };
     SearchService.prototype.createUrl = function (url) {
         return this.baseUrl
