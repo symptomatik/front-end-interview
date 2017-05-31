@@ -2,10 +2,10 @@
     <div *ngIf="result.type === 'post'" class="youtube-post-container">
         <div class="result-metadata-container">
             <div class="result-avatar-container">
-                <img class="result-avatar-image" src="{{channel.profile_image_url}}"/>
+                <a href="https://youtube.com/{{channel.username}}"><img class="result-avatar-image" src="{{channel.profile_image_url}}"/></a>
             </div>
             <div class="result-user-information">
-                <div class="result-username">{{channel.full_name}}</div>
+                <div class="result-username"><a href="https://youtube.com/{{channel.username}}">{{channel.full_name}}</a></div>
                 <div class="result-post-date">
                     <i class="fa fa-youtube-play" aria-hidden="true"></i>
                     Published on {{post.created_date | date}}
@@ -30,10 +30,10 @@
     <div *ngIf="result.type === 'channel'" class="youtube-channel-container channel-container">
         <div class="result-metadata-container">
             <div class="result-avatar-container">
-                <img class="result-avatar-image" src="{{channel.profile_image_url}}"/>
+                <a href="https://youtube.com/{{channel.username}}"><img class="result-avatar-image" src="{{channel.profile_image_url}}"/></a>
             </div>
             <div class="result-user-information">
-                <div class="result-username">{{channel.full_name}}</div>
+                <div class="result-username"><a href="https://youtube.com/{{channel.username}}">{{channel.full_name}}</a></div>
                 <ul class="result-channel-statistics">
                     <li class="result-channel-statistic">
                         <i class="fa fa-youtube-play" aria-hidden="true"></i>
