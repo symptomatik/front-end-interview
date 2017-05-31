@@ -1,25 +1,57 @@
+* {
+    font-family: Helvetica, Arial, sans-serif;
+}
+/* Button Reset Styles */
+button {
+  display: inline-block;
+  padding: 12px;
+  font-size: 12px;
+  box-shadow: none;
+  border-radius: 0;
+}
+button:focus {
+  outline: none
+}
 .app-container {
     padding: 24px;
+    min-width: 800px;
 }
 .search-container {
     width: 100%;
-    border: 1px lightgray;
+    min-width: 660px;
 }
 .search-label {
     width: 100%;
     float: left;
     color: #0096B5;
-    font-size: 14px;
+    font-size: 16px;
 }
 .search-input {
     width: 80%;
-    border-bottom: 2px #0096B5;
-    margin-right: 12px;
+}
+.search-container input[type="text"] {
+    padding: 10px 10px 10px 0;
+    font-size: 14px;
+    border: none;
+    border-bottom: solid 2px #0096B5;
+    transition: border 0.4s;
+}
+.search-container input[type="text"]:focus,
+.search-container input[type="text"].focus {
+    border-bottom: solid 2px #0088AE;
+    outline-style:none;
+    box-shadow:none;
 }
 .submit-search {
-    float: right;
-    width: 15%;
-    height: 20px;
+    color: #FFF;
+    background-color: #0088AE;
+    font-size: 14px;
+    font-weight: 200;
+    letter-spacing: 1px;
+    border: none;
+    padding: 10px 16px;
+    margin-left: 24px;
+    cursor: pointer;
 }
 
 
